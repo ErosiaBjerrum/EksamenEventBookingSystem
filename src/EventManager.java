@@ -47,7 +47,7 @@ public class EventManager {
                 "HTML, CSS, and JavaScript",
                 true
         ));
-    } // Ends addEvent
+    }
 
     public void bookTicket (int tickets, String name) {
         boolean found = false;
@@ -86,4 +86,4 @@ public class EventManager {
 
     }
 
-} // Ends EventManager class
+}

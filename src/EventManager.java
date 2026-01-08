@@ -60,19 +60,15 @@ public class EventManager {
             }
 
             if (!found) {
-                System.out.println("Det angivne event findes ikke.");
-                System.out.println("");
+                System.out.println("Event does not exist.\n");
             }
-
     }
 
     public void printSummary() {
-        System.out.println("=== Event Overview ===");
-        System.out.println("");
+        System.out.println("=== Event Overview ===\n");
         for (Event event : events) {
-           event.getInfo();
+            System.out.println(event.getInfo());
         }
-
     }
 
     public void getMostPopular () {
@@ -82,8 +78,6 @@ public class EventManager {
                 mostBooked = event;
             }
         }
-        System.out.println("Most popular event: " + mostBooked.getName() + " " + "(" + mostBooked.getBookedTickets() + " bookings" + ")");
-
+        System.out.println("Most popular event: " + mostBooked.getName() + " " + "(" + mostBooked.getBookedTickets() + " bookings" + ")\n");
     }
-
 }

@@ -4,9 +4,10 @@ public class Main {
     EventManager em = new EventManager();
 
         em.addEvent();
+        em.bookTicket(3, "Rock ight");
         em.bookTicket(3, "Rock Night");
-
-        em.printSummary();
+        em.bookTicket(5, "Java Basics");
         em.getMostPopular();
+        em.printSummary();
     }
 }

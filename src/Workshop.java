@@ -15,15 +15,12 @@ public class Workshop extends Event {
 
     @Override
     public String getInfo() {
-        System.out.println("Workshop: " + "''" + getName() + "''" + " by " + instructor + " [" + topic + "]");
-        System.out.println("Date: " + getEventDate());
-        System.out.println("Price: " + getPrice() + " kr.");
-        System.out.println("Booked: " + getBookedTickets() + "/" + getMaxCapacity() + " tickets");
-        System.out.println("Materials included: " + hasMaterials());
-        System.out.println("Status: " + statusString());
-        System.out.println("");
-
-        return "";
+        return "Workshop: '" + getName() + "' by " + instructor + " [" + topic + "]\n" +
+                "Date: " + getEventDate() + "\n" +
+                "Price: " + getPrice() + " kr.\n" +
+                "Booked: " + getBookedTickets() + "/" + getMaxCapacity() + " tickets\n" +
+                "Materials included: " + hasMaterials() + "\n" +
+                "Status: " + statusString() + "\n";
     }
 
     public String hasMaterials () {

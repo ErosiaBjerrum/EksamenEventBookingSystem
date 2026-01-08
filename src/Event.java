@@ -18,14 +18,13 @@ public abstract class Event {
 
     public void addBooking (int tickets) {
         if (isSoldOut() || bookedTickets + tickets > maxCapacity) {
-            System.out.println("Der er ingen ledige billetter til " + getName() + ".");
-            System.out.println("");
+            System.out.println("No available tickets for " + getName() + ".\n");
         } else if (tickets <= 0) {
-            System.out.println("Antal billetter skal være over 0.");
-            System.out.println("");
+            System.out.println("Booked tickets must be more than 0.\n");
         }
         else {
             bookedTickets += tickets;
+            System.out.println("You have booked " + tickets + " tickets for the event " + name + ".\n");
         }
     }
 
